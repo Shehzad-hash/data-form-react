@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1em;
+  background-image: url("./img/form-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat";
+  background-blend-mode: multiply;
+  min-height: 100vh;
+}
+
+/* Form Body Wrapper */
+.formBodyWrapper {
+  padding: 5em 0;
+}
+.formBodyWrapper .formContents {
+  background-color: white;
+  border-radius: 1em;
+  padding: 2em;
+  border-top: 5px solid #0d6efd;
+  border-right: 5px solid #0d6efd;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+.formBodyWrapper .formHeading {
+  font-size: 2em;
+  color: black;
+  font-family: "Lobster";
+  text-align: center;
+  margin-bottom: 1em;
+}
+.formBodyWrapper .formHeading span {
+  color: #0d6efd;
+}
+.formBodyWrapper .formSubheading {
+  font-size: 1.3em;
+  color: #0d6efd;
+  font-family: "Lobster";
+  margin-bottom: 0.7em;
+}
+.formBodyWrapper .formSubheading::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 30px;
+  background-color: black;
+  margin-bottom: 6px;
+  margin-right: 8px;
+}
+.formBodyWrapper .formLabel {
+  display: block;
+  margin-bottom: 0.5em;
+  color: black;
+  font-weight: 700;
+}
+.formBodyWrapper .formInput {
+  width: 100%;
+  color: black;
+  background-color: transparent;
+  border: 1px solid #00000020;
+  padding: 0.6em 1em;
+  border-radius: 0.3em;
+  outline: none;
+  margin-bottom: 1.2em;
+}
+.formBodyWrapper .formFile {
+  margin-bottom: 1.2em;
+}
+.formBodyWrapper .formLinkBtn {
+  display: block;
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+.formBodyWrapper .formInput:focus-within {
+  border-color: green;
+}
+.formBodyWrapper .formInput::placeholder {
+  color: black;
+}
+.formBodyWrapper .commonCheckbox {
+  height: 1.3em;
+  width: 1.3em;
+  margin-bottom: 1em;
+}
+.formBodyWrapper .formButton {
+  text-align: center;
+  margin-top: 2em;
+}
+.formBodyWrapper .formButton .formBtn {
+  padding: 0.6em 2em;
+  font-family: "Lobster";
+  border-radius: 0.3em;
+  border: none;
+  background-color: #0d6efd;
+  font-size: 1.2em;
+  color: white;
+  border: 1px solid transparent;
+  transition: 200ms all ease-in-out;
+}
+.formBodyWrapper .formButton .formBtn:hover {
+  background-color: transparent;
+  color: #0d6efd;
+  border-color: #0d6efd;
+  transform: translateY(-5px);
+}
+
+/* Media */
+@media (max-width: 992px) {
+  .formBodyWrapper .formContents {
+    padding: 2em 1em;
+  }
+  .formBodyWrapper .formHeading {
+    font-size: 1.6em;
+  }
+  .formBodyWrapper .formSubheading {
+    font-size: 1.1em;
+  }
+  .formBodyWrapper .formLabel,
+  .formBodyWrapper .formInput {
+    font-size: 0.9em;
+  }
+}
