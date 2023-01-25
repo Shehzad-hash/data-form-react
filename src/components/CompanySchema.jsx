@@ -81,7 +81,7 @@ export default function CompanySchema() {
                         onChange={handleChange}
                       />
                       <label class="formLabel" for="">
-                       Company Logo
+                        Company Logo
                       </label>
                       <input
                         class="formFile"
@@ -197,11 +197,9 @@ export default function CompanySchema() {
                   <h2 class="formSubheading mt-3">Social Media</h2>
                   <div class="row">
                     <div class="col-lg-3">
-                      <label class="formLabel" for="">
-                        
-                      </label>
+                      <label class="formLabel" for=""></label>
                       <a class="formLinkBtn" href="#">
-                      Company Instagram
+                        Company Instagram
                       </a>
                       <input
                         class="commonCheckbox"
@@ -223,10 +221,9 @@ export default function CompanySchema() {
                       />
                     </div>
                     <div class="col-lg-3">
-                      <label class="formLabel" for="">
-                      </label>
+                      <label class="formLabel" for=""></label>
                       <a class="formLinkBtn" href="#">
-                      Company Facebook
+                        Company Facebook
                       </a>
                       <input
                         class="commonCheckbox"
