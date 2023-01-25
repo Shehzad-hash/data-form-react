@@ -6,10 +6,12 @@ import PriceSchema from './components/PriceSchema';
 import ThreeStepProgram from './components/ThreeStepProgram';
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import TwoStepProgram from './components/TwoStepProgram';
+import Navigation from './components/Navigation';
 function App() {
   return (
     
     <BrowserRouter>
+    <Navigation/>
     <Routes>
       <Route element={<CompanySchema/>} path="/"/>
       <Route element={<InstantProgramSchema/>} path="instantProgramSchema"/>

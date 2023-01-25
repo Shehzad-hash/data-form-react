@@ -30,7 +30,15 @@ body {
   background-blend-mode: multiply;
   min-height: 100vh;
 }
-
+.routes{
+  position: absolute;
+  top: 1em;
+}
+.routingBtn{
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin-left: 1em;
+}
 /* Form Body Wrapper */
 .formBodyWrapper {
   padding: 5em 0;

@@ -58,7 +58,6 @@ export default function InstantProgramSchema() {
                 Instant Program <span>Schema</span>
               </h1>
               <form action="">
-             <Link to={"/oneStepProgram"}>NEXT</Link>
                <div class="row">
                  <div class="col-lg-6">
                     <h2 class="formSubheading">Program</h2>

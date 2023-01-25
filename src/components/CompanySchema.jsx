@@ -67,7 +67,6 @@ export default function CompanySchema() {
                   <span>Company</span> Step Form
                 </h1>
                 <form action="">
-                  <Link to={"/instantProgramSchema"}>Next</Link>
                   <div class="row">
                     <div class="col-lg-6">
                       <h2 class="formSubheading">General Info</h2>

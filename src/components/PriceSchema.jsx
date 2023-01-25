@@ -30,9 +30,7 @@ export default function PriceSchema() {
                   Price <span>Schema</span>
                 </h1>
                 <form action="">
-                  <Link to={"/threeStepProgram"} style={{ color: "blue" }}>
-                    Next
-                  </Link>
+                 
                   <h2 class="formSubheading">Price Schema</h2>
                   <div class="row">
                     <div class="col-lg-6">

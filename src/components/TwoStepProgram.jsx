@@ -63,7 +63,6 @@ export default function TwoStepProgram() {
                 Two Step <span>Program</span>
               </h1>
               <form action="">
-               <Link to={"/"}>Next</Link>
                 <h2 class="formSubheading">Program</h2>
                 <div class="row">
                   <div class="col-lg-6">
