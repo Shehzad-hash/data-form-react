@@ -1,46 +1,46 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-export default function ThreeStepProgram() {
+export default function TwoStepProgram() {
   const [details, setDetails] = useState({
     PT: "",
-    PN:"",
-    company:"",
-    MD:"",
-    CN:"",
-    MD2:"",
-    program:"",
-    POD:"",
-    PTT:"",
-    PTT2:"",
-    DLP:"",
-    MLT:"",
-    MLP:"",
-    leverage:"",
-    RP:"",
-    FPS:"",
-    FW:"",
-    PFC:"",
-    PFCP:"",
-    MTTP:"",
-    MPS:"",
-    MFA:"",
-    SPPT:"",
-    SPB:"",
-    MAWS:"",
-    minTo1m:"",
-    SLRequired:"",
-    LSR:"",
-    LSRE:"",
-    LS:"",
-    RE:"",
-    newsTrading:"",
-    EAsAllowed:"",
-    WH:"",
-    CTOW:"",
-    CTOWE:"",
-    consistencyRule:"",
-    otherRestrictions:""
-
+    PN: "",
+    company: "",
+    MD: "",
+    CN: "",
+    MD2: "",
+    program: "",
+    POD: "",
+    POT: "",
+    PTT: "",
+    PTD: "",
+    DLP: "",
+    MLT: "",
+    MLP: "",
+    leverage: "",
+    RP: "",
+    FPS: "",
+    FW: "",
+    PFC: "",
+    PFCP: "",
+    MTTP: "",
+    MPS: "",
+    MFA: "",
+    SPPT: "",
+    SPB: "",
+    MAWS: "",
+    minTo1m: "",
+    SLRequired: "",
+    LSR: "",
+    LSRE: "",
+    LS: "",
+    RE: "",
+    newsTrading: "",
+    EAsAllowed: "",
+    WH: "",
+    CTOW: "",
+    CTOWE: "",
+    consistencyRule: "",
+    otherRestrictions: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -54,16 +54,16 @@ export default function ThreeStepProgram() {
   };
   return (
     <>
-      <div class="formBodyWrapper">
+       <div class="formBodyWrapper">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <div class="formContents">
               <h1 class="formHeading">
-                Three Step <span>Program</span>
+                Two Step <span>Program</span>
               </h1>
               <form action="">
-               <Link to={"/twoStepProgram"}>Next</Link>
+               <Link to={"/"}>Next</Link>
                 <h2 class="formSubheading">Program</h2>
                 <div class="row">
                   <div class="col-lg-6">
@@ -130,18 +130,6 @@ export default function ThreeStepProgram() {
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">
-                      Max Days
-                    </label>
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Max Days"
-                      name="MD2"
-                      
-                    onChange={handleChange} />
-                  </div>
-                  <div class="col-lg-4">
-                    <label class="formLabel" for="">
                       Phase One Days
                     </label>
                     <input
@@ -185,30 +173,6 @@ export default function ThreeStepProgram() {
                       type="text"
                       placeholder="Phase Two Target"
                       name="PTT"
-                      
-                    onChange={handleChange} />
-                  </div>
-                  <div class="col-lg-4">
-                    <label class="formLabel" for="">
-                      Phase Three Days
-                    </label>
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Phase Three Days"
-                      name="PTD2"
-                      
-                    onChange={handleChange} />
-                  </div>
-                  <div class="col-lg-4">
-                    <label class="formLabel" for="">
-                      Phase Three Target
-                    </label>
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Phase Three Target"
-                      name="PTT2"
                       
                     onChange={handleChange} />
                   </div>
@@ -262,7 +226,7 @@ export default function ThreeStepProgram() {
                     onChange={handleChange} />
                   </div>
                   </div>
-                
+       
                   <h2 class="formSubheading mt-3">Profit</h2>
                   <div class="row">
                     <div class="col-lg-4">
@@ -349,7 +313,7 @@ export default function ThreeStepProgram() {
                         
                       onChange={handleChange} />
                   </div>
-               
+              
                   <h2 class="formSubheading mt-3">Scaling</h2>
                   <div class="row">
                     
@@ -414,7 +378,7 @@ export default function ThreeStepProgram() {
                     onChange={handleChange} />
                   </div>
                   </div>
-                
+             
                   <h2 class="formSubheading mt-3">Restrictions</h2>
                   <div class="row">
                     <div class="col-lg-4">
@@ -453,8 +417,8 @@ export default function ThreeStepProgram() {
                         
                       onChange={handleChange} />
                     </div>
-                   
-                 
+                  
+          
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
                         News Trading
@@ -538,8 +502,7 @@ export default function ThreeStepProgram() {
                         name="otherRestrictions"
                         
                       onChange={handleChange} />
-                    </div>                 
-                    
+                    </div>               
                   </div>
                 </div>
                 <div class="formButton">

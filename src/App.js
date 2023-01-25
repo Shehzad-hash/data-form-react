@@ -5,6 +5,7 @@ import OneStepProgram from './components/OneStepProgram';
 import PriceSchema from './components/PriceSchema';
 import ThreeStepProgram from './components/ThreeStepProgram';
 import {BrowserRouter,Routes,Route} from "react-router-dom"
+import TwoStepProgram from './components/TwoStepProgram';
 function App() {
   return (
     
@@ -15,6 +16,7 @@ function App() {
       <Route element={<OneStepProgram/>} path="oneStepProgram"/>
       <Route element={<PriceSchema/>} path="priceSchema"/>
       <Route element={<ThreeStepProgram/>} path="threeStepProgram"/>
+      <Route element={<TwoStepProgram/>} path="twoStepProgram"/>
     </Routes>
     </BrowserRouter>
   

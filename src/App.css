@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@font-face {
+  font-family: "CF light";
+  src: url("./fonts/Articulat/Webfont/ArticulatCF-DemiBold.woff");
+}
+@font-face {
+  font-family: "CF exlight";
+  src: url("./fonts/Articulat/Webfont/ArticulatCF-Light.woff");
+}
+@font-face {
+  font-family: "CF bold";
+  src: url("./fonts/Articulat/Webfont/ArticulatCF-ExtraBold.woff");
+}
 *{
   margin: 0;
   padding: 0;
@@ -14,7 +26,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Montserrat";
+  font-family: "CF light";
   background-blend-mode: multiply;
   min-height: 100vh;
 }
@@ -35,7 +47,7 @@ body {
 .formBodyWrapper .formHeading {
   font-size: 2em;
   color: black;
-  font-family: "Lobster";
+  font-family: "CF bold";
   text-align: center;
   margin-bottom: 1em;
 }
@@ -45,7 +57,7 @@ body {
 .formBodyWrapper .formSubheading {
   font-size: 1.3em;
   color: #0d6efd;
-  font-family: "Lobster";
+  font-family: "CF bold";
   margin-bottom: 0.7em;
 }
 .formBodyWrapper .formSubheading::before {
@@ -89,6 +101,7 @@ body {
 }
 .formBodyWrapper .formInput::placeholder {
   color: black;
+  font-family: "CF exlight";
 }
 .formBodyWrapper .commonCheckbox {
   height: 1.3em;
@@ -101,7 +114,7 @@ body {
 }
 .formBodyWrapper .formButton .formBtn {
   padding: 0.6em 2em;
-  font-family: "Lobster";
+  font-family: "CF light";
   border-radius: 0.3em;
   border: none;
   background-color: #0d6efd;
