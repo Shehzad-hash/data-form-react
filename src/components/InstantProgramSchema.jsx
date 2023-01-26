@@ -3,37 +3,35 @@ import { Link } from "react-router-dom";
 export default function InstantProgramSchema() {
   const [details, setDetails] = useState({
     idProgramType: "",
-    maxLossType: "",
     companyName: "",
-    maxLossPercentage: "",
-    program: "",
-    maxDays: "",
+    idProgram: "",
     programName: "",
-    leverage: "",
     dailyLoss: "",
-    refundPercentage: "",
-    program2: "",
     dailyLossPercentage: "",
-    firstProfitSplitPercentage: "",
+    maxLossType: "",
+    maxLossPercentage: "",
+    Leverage: "",
+    refundPercentage: "",
+    firstProfitSplit: "",
     firstWithdrawal: "",
-    profitFromChallenge: "",
-    profitFromChallengePercentage: "",
-    minTimePayOut: "",
-    maxProfitSplitPercentage: "",
+    profitsFromChallenge: "",
+    profitsFromChallengePercentage: "",
+    minimumTimetoPayout: "",
+    maxProfitSplit: "",
     maxFundedAllocation: "",
-    scalingPlanFirstProfitTargets: "",
-    scalingPlanOngoingProfitTargets:"",
-    scalingPlanBenifits: "",
+    scalingPlanFirstProfitTarget: "",
+    scalingPlanOngoingProfitTargets: "",
+    scalingPlanBenefits: "",
     maxAllocationWithScaling: "",
-    minTimeTo1m: "",
-    SLRequired: "",
+    minimumTimetoGet1MfromMaxAllocation: "",
+    sLRequired: "",
     lotSizeRestriction: "",
     lotSizeRestrictionExplained: "",
     newsTrading: "",
-    EAsAllowed: "",
+    eAsAllowed: "",
     weekendHolding: "",
-    cryptoTradingOnWeekend: "",
-    cryptoTradingOnWeekendExplained: "",
+    cryptoTradingOnWeekends: "",
+    cryptoTradingonWeekendsExplained: "",
     consistencyRule: "",
     otherRestrictions: "",
   });
@@ -88,7 +86,7 @@ export default function InstantProgramSchema() {
                       class="formInput"
                       type="text"
                       placeholder="Id Program"
-                      name="program2"
+                      name="idProgram"
                       
                     onChange={handleChange} />
                     <label class="formLabel" for="">
@@ -152,7 +150,7 @@ export default function InstantProgramSchema() {
                       class="formInput"
                       type="text"
                       placeholder="Leverage"
-                      name="leverage"
+                      name="Leverage"
                       
                     onChange={handleChange} />
                
@@ -174,7 +172,7 @@ export default function InstantProgramSchema() {
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">
-                      First Profit Split Percentage
+                      First Profit Split
                     </label>
                     <input
                       class="formInput"
@@ -200,7 +198,7 @@ export default function InstantProgramSchema() {
                     <label class="formLabel" for="">
                       Profits From Challenge
                     </label>
-                    <input class="commonCheckbox" type="checkbox" name="profitFromChallenge" onChange={handleChange} />
+                    <input class="commonCheckbox" type="checkbox" name="profitsFromChallenge" onChange={handleChange} />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">
@@ -210,7 +208,7 @@ export default function InstantProgramSchema() {
                       class="formInput"
                       type="text"
                       placeholder="Profits From Challenge Percentage"
-                      name="profitFromChallengePercentage"
+                      name="profitsFromChallengePercentage"
                       
                     onChange={handleChange} />
                   </div>
@@ -222,19 +220,19 @@ export default function InstantProgramSchema() {
                       class="formInput"
                       type="text"
                       placeholder="Minimum Time To Payout"
-                      name="minTimePayOut"
+                      name="minimumTimetoPayout"
                       
                     onChange={handleChange} />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">
-                      Max Profit Split Percentage
+                      Max Profit Split
                     </label>
                     <input
                       class="formInput"
                       type="text"
                       placeholder="Max Profit Split"
-                      name="maxProfitSplitPercentage"
+                      name="maxProfitSplit"
                       
                     onChange={handleChange} />
                   </div>
@@ -261,7 +259,7 @@ export default function InstantProgramSchema() {
                       class="formInput"
                       type="text"
                       placeholder="Scaling Plan First Profit Target"
-                      name="scalingPlanFirstProfitTargets"
+                      name="scalingPlanFirstProfitTarget"
                       
                     onChange={handleChange} />
                   </div>
@@ -285,7 +283,7 @@ export default function InstantProgramSchema() {
                       class="formInput"
                       type="text"
                       placeholder="Scaling Plan Benefits"
-                      name="scalingPlanBenifits"
+                      name="scalingPlanBenefits"
                       
                     onChange={handleChange} />
                   </div>
@@ -309,7 +307,7 @@ export default function InstantProgramSchema() {
                       class="formInput"
                       type="text"
                       placeholder="Minimum Time To Get1M From Max Allocation"
-                      name="minTimeTo1m"
+                      name="minimumTimetoGet1MfromMaxAllocation"
                       
                     onChange={handleChange} />
                   </div>
@@ -320,7 +318,7 @@ export default function InstantProgramSchema() {
                     <label class="formLabel" for="">
                       SL Required
                     </label>
-                    <input class="commonCheckbox" type="checkbox" name="SLRequired" onChange={handleChange} />
+                    <input class="commonCheckbox" type="checkbox" name="sLRequired" onChange={handleChange} />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">
@@ -344,7 +342,7 @@ export default function InstantProgramSchema() {
                     <label class="formLabel" for="">
                       EAs Allowed
                     </label>
-                    <input class="commonCheckbox" type="checkbox" name="EAsAllowed" onChange={handleChange} />
+                    <input class="commonCheckbox" type="checkbox" name="eAsAllowed" onChange={handleChange} />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">
@@ -362,13 +360,13 @@ export default function InstantProgramSchema() {
                     <label class="formLabel" for="">
                       Crypto Trading On Weekends
                     </label>
-                    <input class="commonCheckbox" type="checkbox" name="cryptoTradingOnWeekend" onChange={handleChange} />
+                    <input class="commonCheckbox" type="checkbox" name="cryptoTradingOnWeekends" onChange={handleChange} />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">
                       Crypto Tradingon Weekends Explained
                     </label>
-                    <input class="commonCheckbox" type="checkbox" name="cryptoTradingOnWeekendExplained" onChange={handleChange} />
+                    <input class="commonCheckbox" type="checkbox" name="cryptoTradingonWeekendsExplained" onChange={handleChange} />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">

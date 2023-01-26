@@ -2,44 +2,46 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 export default function ThreeStepProgram() {
   const [details, setDetails] = useState({
-    PT: "",
-    PN:"",
-    company:"",
-    MD:"",
-    CN:"",
-    MD2:"",
-    program:"",
-    POD:"",
-    PTT:"",
-    PTT2:"",
-    DLP:"",
-    MLT:"",
-    MLP:"",
-    leverage:"",
-    RP:"",
-    FPS:"",
-    FW:"",
-    PFC:"",
-    PFCP:"",
-    MTTP:"",
-    MPS:"",
-    MFA:"",
-    SPPT:"",
-    SPB:"",
-    MAWS:"",
-    minTo1m:"",
-    SLRequired:"",
-    LSR:"",
-    LSRE:"",
-    LS:"",
-    RE:"",
-    newsTrading:"",
-    EAsAllowed:"",
-    WH:"",
-    CTOW:"",
-    CTOWE:"",
-    consistencyRule:"",
-    otherRestrictions:""
+    iDProgramType: "",
+    companyName: "",
+    iDProgram: "",
+    programName: "",
+    minimumDays: "",
+    maxDays: "",
+    phaseOneDays: "",
+    phaseOneTarget: "",
+    phaseTwoDays: "",
+    phaseTwoTarget: "",
+    phaseThreeDays: "",
+    phaseThreeTarget: "",
+    dailyLossPercentage: "",
+    maxLossType: "",
+    maxLossPercentage: "",
+    leverage: "",
+    refundPercentage: "",
+    firstProfitSplit: "",
+    firstWithdrawal: "",
+    profitsfromChallenge: "",
+    profitfromChallengePercentage: "",
+    minimumTimeToPayout: "",
+    maxProfitSplit: "",
+    maxFundedAllocation: "",
+    scalingPlanProfitTarget: "",
+    scalingPlanBenefits: "",
+    maxAllocationWithScaling: "",
+    minimumTimetoGet1MfromMaxAllocation: "",
+    sLRequired: "",
+    lotSizeRestriction: "",
+    lotSizeRestrictionExplained: "",
+    lotSize: "",
+    restrictionExplained: "",
+    newsTrading: "",
+    eAsAllowed: "",
+    weekendHolding: "",
+    cryptoTradingOnWeekends: "",
+    cryptoTradingOnWeekendsExplained: "",
+    consistencyRule: "",
+    otherRestrictions: "",
 
   });
   const handleChange = (e) => {
@@ -73,7 +75,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Id Program Type"
-                      name="PT"
+                      name="iDProgramType"
                       
                     onChange={handleChange} />
                     <label class="formLabel" for="">
@@ -83,7 +85,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Company Name"
-                      name="CN"
+                      name="companyName"
                       
                     onChange={handleChange} />
                   </div>
@@ -95,7 +97,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Id Program"
-                      name="program"
+                      name="iDProgram"
                       
                     onChange={handleChange} />
 
@@ -106,7 +108,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Program Name"
-                      name="PN"
+                      name="programName"
                       
                     onChange={handleChange} />
 
@@ -122,7 +124,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Minimum Days"
-                      name="MD"
+                      name="minimumDays"
                       
                     onChange={handleChange} />
               
@@ -135,7 +137,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Max Days"
-                      name="MD2"
+                      name="maxDays"
                       
                     onChange={handleChange} />
                   </div>
@@ -147,7 +149,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Phase One Days"
-                      name="POD"
+                      name="phaseOneDays"
                       
                     onChange={handleChange} />
                   </div>
@@ -159,7 +161,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Phase One Target"
-                      name="POT"
+                      name="phaseOneTarget"
                       
                     onChange={handleChange} />
                   </div>
@@ -171,7 +173,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Phase Two Days"
-                      name="PTD"
+                      name="phaseTwoDays"
                       
                     onChange={handleChange} />
                   </div>
@@ -183,7 +185,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Phase Two Target"
-                      name="PTT"
+                      name="phaseTwoTarget"
                       
                     onChange={handleChange} />
                   </div>
@@ -195,7 +197,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Phase Three Days"
-                      name="PTD2"
+                      name="phaseThreeDays"
                       
                     onChange={handleChange} />
                   </div>
@@ -207,7 +209,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Phase Three Target"
-                      name="PTT2"
+                      name="phaseThreeTarget"
                       
                     onChange={handleChange} />
                   </div>
@@ -220,7 +222,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Daily Loss Percentage"
-                      name="DLP"
+                      name="dailyLossPercentage"
                       
                     onChange={handleChange} />
                   </div>
@@ -232,7 +234,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Max Loss Type"
-                      name="MLT"
+                      name="maxLossType"
                       
                     onChange={handleChange} />
                   </div>
@@ -244,7 +246,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Max Loss Percentage"
-                      name="MLP"
+                      name="maxLossPercentage"
                       
                     onChange={handleChange} />
                   </div>
@@ -272,7 +274,7 @@ export default function ThreeStepProgram() {
                         class="formInput"
                         type="text"
                         placeholder="Refund Percentage"
-                        name="RP"
+                        name="refundPercentage"
                         
                       onChange={handleChange} />
                     </div>
@@ -284,7 +286,7 @@ export default function ThreeStepProgram() {
                         class="formInput"
                         type="text"
                         placeholder="First Profit Split"
-                        name="FPS"
+                        name="firstProfitSplit"
                         
                       onChange={handleChange} />
                     </div>
@@ -296,7 +298,7 @@ export default function ThreeStepProgram() {
                         class="formInput"
                         type="text"
                         placeholder="First Withdrawal"
-                        name="FW"
+                        name="firstWithdrawal"
                         
                       onChange={handleChange} />
                     </div>
@@ -308,7 +310,7 @@ export default function ThreeStepProgram() {
                         class="formInput"
                         type="text"
                         placeholder="Profits From Challenge"
-                        name="PFC"
+                        name="profitsfromChallenge"
                         
                       onChange={handleChange} />
                     </div>
@@ -320,7 +322,7 @@ export default function ThreeStepProgram() {
                         class="formInput"
                         type="text"
                         placeholder="Profit From Challenge Percentage"
-                        name="PFCP"
+                        name="profitfromChallengePercentage"
                         
                       onChange={handleChange} />
                     </div>
@@ -332,7 +334,7 @@ export default function ThreeStepProgram() {
                         class="formInput"
                         type="text"
                         placeholder="Minimum Timr To Payout"
-                        name="MTTP"
+                        name="minimumTimeToPayout"
                         
                       onChange={handleChange} />
                     </div>
@@ -344,7 +346,7 @@ export default function ThreeStepProgram() {
                         class="formInput"
                         type="text"
                         placeholder="Max Profit Split"
-                        name="MPS"
+                        name="maxProfitSplit"
                         
                       onChange={handleChange} />
                   </div>
@@ -360,7 +362,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Max Funded Allocation"
-                      name="MFA"
+                      name="maxFundedAllocation"
                       
                     onChange={handleChange} />
                   </div>
@@ -372,7 +374,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Scaling Plan Profit Target"
-                      name="SPPT"
+                      name="scalingPlanProfitTarget"
                       
                     onChange={handleChange} />
                   </div>
@@ -384,7 +386,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Scaling Plan Benefits"
-                      name="SPB"
+                      name="scalingPlanBenefits"
                       
                     onChange={handleChange} />
                   </div>
@@ -396,7 +398,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Max Allocation With Scaling"
-                      name="MAWS"
+                      name="maxAllocationWithScaling"
                       
                     onChange={handleChange} />
                   </div>
@@ -408,7 +410,7 @@ export default function ThreeStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Minimum Time To Get1M From Max Allocation"
-                      name="minTo1m"
+                      name="minimumTimetoGet1MfromMaxAllocation"
                       
                     onChange={handleChange} />
                   </div>
@@ -424,7 +426,7 @@ export default function ThreeStepProgram() {
                         class="commonCheckbox"
                         type="checkbox"
                         placeholder="SL Required"
-                        name="SLRequired"
+                        name="sLRequired"
                         
                       onChange={handleChange} />
                     </div>
@@ -436,7 +438,7 @@ export default function ThreeStepProgram() {
                         class="commonCheckbox"
                         type="checkbox"
                         placeholder="Lot Size Restriction"
-                        name="LSR"
+                        name="lotSizeRestriction"
                         
                       onChange={handleChange} />
                     </div>
@@ -448,12 +450,10 @@ export default function ThreeStepProgram() {
                         class="commonCheckbox"
                         type="checkbox"
                         placeholder="Lot Size Restriction Explained"
-                        name="LSRE"
+                        name="lotSizeRestrictionExplained"
                         
                       onChange={handleChange} />
                     </div>
-                   
-                 
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
                         News Trading
@@ -474,7 +474,7 @@ export default function ThreeStepProgram() {
                         class="commonCheckbox"
                         type="checkbox"
                         placeholder="EAs Allowed"
-                        name="EAsAllowed"
+                        name="eAsAllowed"
                         
                       onChange={handleChange} />
                     </div>
@@ -486,7 +486,7 @@ export default function ThreeStepProgram() {
                         class="commonCheckbox"
                         type="checkbox"
                         placeholder="Weekend Holding"
-                        name="WH"
+                        name="weekendHolding"
                         
                       onChange={handleChange} />
                     </div>
@@ -498,7 +498,7 @@ export default function ThreeStepProgram() {
                         class="commonCheckbox"
                         type="checkbox"
                         placeholder="Crypto Trading On Weekends"
-                        name="CTOW"
+                        name="cryptoTradingOnWeekends"
                         
                       onChange={handleChange} />
                     </div>
@@ -510,7 +510,7 @@ export default function ThreeStepProgram() {
                         class="commonCheckbox"
                         type="checkbox"
                         placeholder="Crypto Trading On Weekends Explained"
-                        name="CTOWE"
+                        name="cryptoTradingOnWeekendsExplained"
                         
                       onChange={handleChange} />
                     </div>

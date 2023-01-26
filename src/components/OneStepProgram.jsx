@@ -2,43 +2,40 @@ import React,{useState} from "react";
 import { Link } from "react-router-dom";
 export default function OneStepProgram() {
   const [details, setDetails] = useState({
-   PT:"",
-   PN:"",
-   company:"",
-   minDays:"",
-   CN:"",
-   POD:"",
-   program:"",
-   POT:"",
-   DL:"",
-   DLP:"",
-   MLT:"",
-   MLP:"",
-   leverage:"",
-   RP:"",
-   FPS:"",
-   FW:"",
-   PFC:"",
-   PFCP:"",
-   MTTP:"",
-   MPS:"",
-   MFA:"",
-   SPPT:"",
-   SPB:"",
-   MAWS:"",
-   minTo1m:"",
-   SLRequired:"",
-   LSR:"",
-   LSRE:"",
-   newsTrading:"",
-   EAsAllowed:"",
-   WH:"",
-   CTOW:"",
-   CTOWE:"",
-   consistencyRule:"",
-   otherRestrictions:""
-
-
+    iDProgramType: "",
+    companyName: "",
+    iDProgram: "",
+    programName: "",
+    minimumDays: "",
+    PhaseOneDays: "",
+    phaseOneTarget: "",
+    dailyLoss: "",
+    dailyLossPercentage: "",
+    maxLossType: "",
+    maxLossPercentage: "",
+    leverage: "",
+    refundPercentage: "",
+    firstProfitSplit: "",
+    firstWithdrawal: "",
+    profitsfromChallenge: "",
+    profitfromChallengePercentage: "",
+    minimumTimeToPayout: "",
+    maxProfitSplit: "",
+    maxFundedAllocation: "",
+    scalingPlanProfitTarget: "",
+    scalingPlanBenefits: "",
+    maxAllocationWithScaling: "",
+    minimumTimetoGet1MfromMaxAllocation: "",
+    sLRequired: "",
+    lotSizeRestriction: "",
+    lotSizeRestrictionExplained: "",
+    newsTrading: "",
+    eAsAllowed: "",
+    weekendHolding: "",
+    cryptoTradingOnWeekends: "",
+    cryptoTradingOnWeekendsExplained: "",
+    consistencyRule: "",
+    otherRestrictions: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -71,7 +68,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Id Program Type"
-                      name="PT"
+                      name="iDProgramType"
                       
                     onChange={handleChange} />
 
@@ -82,7 +79,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Company Name"
-                      name="CN"
+                      name="companyName"
                       
                     onChange={handleChange} />
                   </div>
@@ -94,7 +91,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Id Program"
-                      name="program"
+                      name="iDProgram"
                       
                     onChange={handleChange} />
                     <label class="formLabel" for="">
@@ -104,7 +101,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Program Name"
-                      name="PN"
+                      name="programName"
                       
                     onChange={handleChange} />
                   </div>
@@ -122,7 +119,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Minimum Days"
-                      name="minDays"
+                      name="minimumDays"
                       
                     onChange={handleChange} />
                  
@@ -135,7 +132,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Phase One Days"
-                      name="POD"
+                      name="PhaseOneDays"
                     onChange={handleChange} />
                   </div>
                   <div class="col-lg-4">
@@ -146,7 +143,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Phase One Targets"
-                      name="POT"
+                      name="phaseOneTarget"
                       
                     onChange={handleChange} />
                   </div>
@@ -158,7 +155,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Daily Loss"
-                      name="DL"
+                      name="dailyLoss"
                       
                     onChange={handleChange} />
                   </div>
@@ -170,7 +167,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Daily Loss Percentage"
-                      name="DLP"
+                      name="dailyLossPercentage"
                       
                     onChange={handleChange} />
                   </div>
@@ -182,7 +179,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Max Loss Type"
-                      name="MLT"
+                      name="maxLossType"
                       
                     onChange={handleChange} />
                   </div>
@@ -194,7 +191,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Max Loss Percentage"
-                      name="MLP"
+                      name="maxLossPercentage"
                       
                     onChange={handleChange} />
                   </div>
@@ -215,13 +212,13 @@ export default function OneStepProgram() {
                 <div class="row">
                   <div class="col-lg-4">
                     <label class="formLabel" for="">
-                      Refund Percentag
+                      Refund Percentage
                     </label>
                     <input
                       class="formInput"
                       type="text"
                       placeholder="Refund Percentag"
-                      name="RP"
+                      name="refundPercentage"
                       
                     onChange={handleChange} />
                   </div>
@@ -233,7 +230,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="First Profit Split"
-                      name="FPS"
+                      name="firstProfitSplit"
                       
                     onChange={handleChange} />
                   </div>
@@ -245,7 +242,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="First Withdrawal"
-                      name="FW"
+                      name="firstWithdrawal"
                       
                     onChange={handleChange} />
                   </div>
@@ -257,7 +254,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Profits From Challenge"
-                      name="PFC"
+                      name="profitsfromChallenge"
                       
                     onChange={handleChange} />
                   </div>
@@ -269,7 +266,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Profits From Challenge Percentage"
-                      name="PFCP"
+                      name="profitfromChallengePercentage"
                       
                     onChange={handleChange} />
                   </div>
@@ -281,7 +278,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Minimum Timr To Payout"
-                      name="MTTP"
+                      name="minimumTimeToPayout"
                       
                     onChange={handleChange} />
                   </div>
@@ -293,7 +290,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Max Profit Split"
-                      name="MPS"
+                      name="maxProfitSplit"
                       
                     onChange={handleChange} />
                   </div>
@@ -308,7 +305,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Max Funded Allocation"
-                      name="MFA"
+                      name="maxFundedAllocation"
                       
                     onChange={handleChange} />
                   </div>
@@ -320,7 +317,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Scaling Plan Profit Target"
-                      name="SPPT"
+                      name="scalingPlanProfitTarget"
                       
                     onChange={handleChange} />
                   </div>
@@ -332,7 +329,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Scaling Plan Benefits"
-                      name="SPB"
+                      name="scalingPlanBenefits"
                       
                     onChange={handleChange} />
                   </div>
@@ -344,7 +341,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Max Allocation With Scaling"
-                      name="MAWS"
+                      name="maxAllocationWithScaling"
                       
                     onChange={handleChange} />
                   </div>
@@ -356,7 +353,7 @@ export default function OneStepProgram() {
                       class="formInput"
                       type="text"
                       placeholder="Minimum Time To Get1M From Max Allocation"
-                      name="minTo1m"
+                      name="minimumTimetoGet1MfromMaxAllocation"
                       
                     onChange={handleChange} />
                   </div>
@@ -372,7 +369,7 @@ export default function OneStepProgram() {
                       class="commonCheckbox"
                       type="checkbox"
                       placeholder="SL Required"
-                      name="SLRequired"
+                      name="sLRequired"
                       
                     onChange={handleChange} />
                   </div>
@@ -384,7 +381,7 @@ export default function OneStepProgram() {
                       class="commonCheckbox"
                       type="checkbox"
                       placeholder="Lot Size Restriction"
-                      name="LSR"
+                      name="lotSizeRestriction"
                       
                     onChange={handleChange} />
                   </div>
@@ -396,7 +393,7 @@ export default function OneStepProgram() {
                       class="commonCheckbox"
                       type="checkbox"
                       placeholder="Lot Size Restriction Explained"
-                      name="LSRE"
+                      name="lotSizeRestrictionExplained"
                       
                     onChange={handleChange} />
                   </div>
@@ -421,7 +418,7 @@ export default function OneStepProgram() {
                       class="commonCheckbox"
                       type="checkbox"
                       placeholder="EAs Allowed"
-                      name="EAsAllowed"
+                      name="eAsAllowed"
                       
                     onChange={handleChange} />
                   </div>
@@ -433,7 +430,7 @@ export default function OneStepProgram() {
                       class="commonCheckbox"
                       type="checkbox"
                       placeholder="Weekend Holding"
-                      name="WH"
+                      name="weekendHolding"
                       
                     onChange={handleChange} />
                   </div>
@@ -445,7 +442,7 @@ export default function OneStepProgram() {
                       class="commonCheckbox"
                       type="checkbox"
                       placeholder="Crypto Trading On Weekends"
-                      name="CTOW"
+                      name="cryptoTradingOnWeekends"
                       
                     onChange={handleChange} />
                   </div>
@@ -457,7 +454,7 @@ export default function OneStepProgram() {
                       class="commonCheckbox"
                       type="checkbox"
                       placeholder="Crypto Trading On Weekends Explained"
-                      name="CTOWE"
+                      name="cryptoTradingOnWeekendsExplained"
                       
                     onChange={handleChange} />
                   </div>

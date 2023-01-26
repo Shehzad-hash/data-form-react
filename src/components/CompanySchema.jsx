@@ -2,49 +2,50 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 export default function CompanySchema() {
   const [details, setDetails] = useState({
-    name: "",
-    logo: "",
-    instagram: "",
-    facebook: "",
-    instaLink: "",
-    fbLink: "",
-    website: "",
-    affliateLink: "",
-    brokerName: "",
-    other: "",
-    comissionsFXperlot: "",
-    MT4: "",
-    MT5: "",
-    CTrader: "",
-    tradingView: "",
-    twitter: "",
-    twitterLink: "",
-    youtube: "",
-    youtubeLink: "",
-    tikTok: "",
-    tikTokLink: "",
-    discordServer: "",
-    discordServerLink: "",
-    telegramChannelLink: "",
-    telegramChannel: "",
-    ownMobileApp: "",
-    mobileAppImage: "",
-    accInotherCurrencies: "",
-    websiteScreenshot: "",
-    websiteinOtherLanguages: "",
-    dashboardImage: "",
-    languages: "",
-    customerSupportLiveChat: "",
-    customerSupportDays: "",
-    avgCustomerSupportResponseTime: "",
-    customerSupportHours: "",
-    trustPilotStars: "",
-    trustPilotLink: "",
-    CEOName: "",
-    CEOImage: "",
-    CEOCountry: "",
-    CEOInsta: "",
-    CEOInstaLink: "",
+    companyName: "",
+    companyLogo: "",
+    companyWebsite: "",
+    companyAffliateLink: "",
+    companyBrokerName: "",
+    companyComissionsFXPerLot: "",
+    companyMT4: "",
+    companyMT5: "",
+    companycTrader: "",
+    companyTradingView: "",
+    companyOtherPlatform: "",
+    companyInstagram: "",
+    companyInstagramLink: "",
+    companyFacebook: "",
+    companyFacebookLink: "",
+    companyTwitter: "",
+    companyTwitterLink: "",
+    companyYoutube: "",
+    companyYoutubeLink: "",
+    companyTiktok: "",
+    companyTiktokLink: "",
+    companyDiscordServer: "",
+    companyDiscordServerLink: "",
+    companyTelegramChannel: "",
+    companyTelegramChannelLink: "",
+    companyOwnMobileApp: "",
+    companyMobileAppImage: "",
+    companyAccInothercurrencies: "",
+    companyOtherCurrenciesSymbol: "",
+    companyWebsiteScreenshot: "",
+    companyWebsiteinOtherlanguages: "",
+    companyDashboardImage: "",
+    companyCustomerSupportLiveChat: "",
+    companyCustomerSupportDays: "",
+    companyCustomerSupportHours: "",
+    companyAvgCustomerSupportResponseTime: "",
+    companyTrustPilotStars: "",
+    companyTrustPilotLink: "",
+    companyCEOName: "",
+    companyCEOImage: "",
+    companyCEOCountry: "",
+    companyCeoInstagram: "",
+    companyCEOInstagramLink: "",
+    companyLanguages:""
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -77,82 +78,82 @@ export default function CompanySchema() {
                         class="formInput"
                         type="text"
                         placeholder="Company Name"
-                        name="name"
+                        name="companyName"
                         onChange={handleChange}
                       />
                       <label class="formLabel" for="">
-                        Company Logo
+                        Logo
                       </label>
                       <input
                         class="formFile"
                         type="file"
-                        name="logo"
+                        name="companyLogo"
                         onChange={handleChange}
                       />
                       <label class="formLabel" for="">
-                        Company Website
+                         Website
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Website"
-                        name="website"
+                        placeholder=" Website"
+                        name="companyWebsite"
                         onChange={handleChange}
                       />
                       <label class="formLabel" for="">
-                        Company Affliate Link
+                         Affliate Link
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Affliate Link"
-                        name="affliateLink"
+                        placeholder=" Affliate Link"
+                        name="companyAffliateLink"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-6 mt-5 mt-lg-0">
                       <h2 class="formSubheading">Platform</h2>
                       <label class="formLabel" for="">
-                        Company Broker Name
+                         Broker Name
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Broker Name"
-                        name="brokerName"
+                        placeholder=" Broker Name"
+                        name="companyBrokerName"
                         onChange={handleChange}
                       />
                       <label class="formLabel" for="">
-                        Company Comissions FX perlot
+                         Comissions FX perlot
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Comissions FX perlot"
-                        name="comissionsFXperlot"
+                        placeholder=" Comissions FX perlot"
+                        name="companyComissionsFXPerLot"
                         onChange={handleChange}
                       />
                       <div class="row mt-2">
                         <div class="col-6">
                           <label class="formLabel" for="">
-                            Company MT4
+                             MT4
                           </label>
                           <input
                             class="commonCheckbox"
                             type="checkbox"
                             checked=""
-                            name="MT4"
+                            name="companyMT4"
                             onChange={handleChange}
                           />
                         </div>
                         <div class="col-6">
                           <label class="formLabel" for="">
-                            Company MT5
+                             MT5
                           </label>
                           <input
                             class="commonCheckbox"
                             type="checkbox"
-                            name="MT5"
+                            name="companyMT5"
                             onChange={handleChange}
                           />
                         </div>
@@ -160,35 +161,35 @@ export default function CompanySchema() {
                       <div class="row mt-2">
                         <div class="col-6">
                           <label class="formLabel" for="">
-                            Company CTrader
+                             CTrader
                           </label>
                           <input
                             class="commonCheckbox"
                             type="checkbox"
                             checked=""
-                            name="CTrader"
+                            name="companycTrader"
                             onChange={handleChange}
                           />
                         </div>
                         <div class="col-6">
                           <label class="formLabel" for="">
-                            Company Trading View
+                             Trading View
                           </label>
                           <input
                             class="commonCheckbox"
                             type="checkbox"
-                            name="tradingView"
+                            name="companyTradingView"
                             onChange={handleChange}
                           />
                         </div>
                         <label class="formLabel" for="">
-                          Company Other Platform
+                           Other Platform
                         </label>
                         <input
                           class="formInput"
                           type="text"
-                          placeholder="Company Other Platform"
-                          name="other"
+                          placeholder=" Other Platform"
+                          name="companyOtherPlatform"
                           onChange={handleChange}
                         />
                       </div>
@@ -197,166 +198,169 @@ export default function CompanySchema() {
                   <h2 class="formSubheading mt-3">Social Media</h2>
                   <div class="row">
                     <div class="col-lg-3">
-                      <label class="formLabel" for=""></label>
+                      <label class="formLabel" for="">
+                        
+                      </label>
                       <a class="formLinkBtn" href="#">
-                        Company Instagram
+                       Instagram
                       </a>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="instagram"
+                        name="companyInstagram"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Instagram Link
+                         Instagram Link
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Instagram Link"
-                        name="instaLink"
+                        placeholder=" Instagram Link"
+                        name="companyInstagramLink"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
-                      <label class="formLabel" for=""></label>
+                      <label class="formLabel" for="">
+                      </label>
                       <a class="formLinkBtn" href="#">
-                        Company Facebook
+                       Facebook
                       </a>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="facebook"
+                        name="companyFacebook"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Facebook Link
+                         Facebook Link
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Facebook Link"
-                        name="fbLink"
+                        placeholder=" Facebook Link"
+                        name="companyFacebookLink"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Twitter
+                         Twitter
                       </label>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="twitter"
+                        name="companyTwitter"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Twitter Link
+                         Twitter Link
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        name="twitterLink"
-                        placeholder="Company Twitter Link"
+                        name="companyTwitterLink"
+                        placeholder=" Twitter Link"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Youtube
+                         Youtube
                       </label>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="youtube"
+                        name="companyYoutube"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Youtube Link
+                         Youtube Link
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        name="youtubeLink"
-                        placeholder="Company Youtube Link"
+                        name="companyYoutubeLink"
+                        placeholder=" Youtube Link"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Tiktok
+                         Tiktok
                       </label>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="tikTok"
+                        name="companyTiktok"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Tiktok Link
+                         Tiktok Link
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        name="tikTokLink"
-                        placeholder="Company Tiktok Link"
+                        name="companyTiktokLink"
+                        placeholder=" Tiktok Link"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Discord Server
+                         Discord Server
                       </label>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="discordServer"
+                        name="companyDiscordServer"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Discord Server Link
+                         Discord Server Link
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        name="discordServerLink"
-                        placeholder="Company   Discord Server Link"
+                        name="companyDiscordServerLink"
+                        placeholder="   Discord Server Link"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Telegram Channel
+                         Telegram Channel
                       </label>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        placeholder="Company Telegram Channel"
-                        name="telegramChannel"
+                        placeholder=" Telegram Channel"
+                        name="companyTelegramChannel"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Company Telegram Channel Link
+                         Telegram Channel Link
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Telegram Channel Link"
-                        name="telegramChannelLink"
+                        placeholder=" Telegram Channel Link"
+                        name="companyTelegramChannelLink"
                         onChange={handleChange}
                       />
                     </div>
@@ -365,91 +369,91 @@ export default function CompanySchema() {
                   <div class="row">
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Own Mobile App
+                         Own Mobile App
                       </label>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="ownMobileApp"
+                        name="companyOwnMobileApp"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Mobile App Image
+                         Mobile App Image
                       </label>
                       <input
                         class="formFile"
                         type="file"
-                        name="mobileAppImage"
+                        name="companyMobileAppImage"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Acc Inother currencies
+                         Acc Inother currencies
                       </label>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="accInotherCurrencies"
+                        name="companyAccInothercurrencies"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Other Currencies Symbol
+                         Other Currencies Symbol
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Other Currencies Symbol"
-                        name="otherCurrenciesSymbol"
+                        placeholder=" Other Currencies Symbol"
+                        name="companyOtherCurrenciesSymbol"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Website Screenshot
+                         Website Screenshot
                       </label>
                       <input
                         class="formFile"
                         type="file"
-                        name="websiteScreenshot"
+                        name="companyWebsiteScreenshot"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Website in Other languages
+                         Website in Other languages
                       </label>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="websiteinOtherLanguages"
+                        name="companyWebsiteinOtherlanguages"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Languages
+                         Languages
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Languages"
-                        name="languages"
+                        placeholder=" Languages"
+                        name="companyLanguages"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Dashboard Image
+                         Dashboard Image
                       </label>
                       <input
                         class="formFile"
                         type="file"
-                        name="dashboardImage"
+                        name="companyDashboardImage"
                         onChange={handleChange}
                       />
                     </div>
@@ -458,72 +462,72 @@ export default function CompanySchema() {
                   <div class="row">
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Customer Support Live Chat
+                         Customer Support Live Chat
                       </label>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="customerSupportLiveChat"
+                        name="companyCustomerSupportLiveChat"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Customer Support Days
+                         Customer Support Days
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Customer Support Days"
-                        name="customerSupportDays"
+                        placeholder=" Customer Support Days"
+                        name="companyCustomerSupportDays"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Customer Support Hours
+                         Customer Support Hours
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Customer Support Hours"
-                        name="customerSupportHours"
+                        placeholder=" Customer Support Hours"
+                        name="companyCustomerSupportHours"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Avg Customer Support Response Time
+                         Avg Customer Support Response Time
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Avg Customer Support Response Time"
-                        name="avgCustomerSupportResponseTime"
+                        placeholder=" Avg Customer Support Response Time"
+                        name="companyAvgCustomerSupportResponseTime"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Trust Pilot Stars
+                         Trust Pilot Stars
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Trust Pilot Stars"
-                        name="trustPilotStars"
+                        placeholder=" Trust Pilot Stars"
+                        name="companyTrustPilotStars"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company Trust Pilot Link
+                         Trust Pilot Link
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company Trust Pilot Link"
-                        name="trustPilotLink"
+                        placeholder=" Trust Pilot Link"
+                        name="companyTrustPilotLink"
                         onChange={handleChange}
                       />
                     </div>
@@ -532,59 +536,59 @@ export default function CompanySchema() {
                   <div class="row">
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company CEO Name
+                         CEO Name
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company CEO Name"
-                        name="CEOName"
+                        placeholder=" CEO Name"
+                        name="companyCEOName"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company CEO Image
+                         CEO Image
                       </label>
                       <input
                         class="formFile"
                         type="file"
-                        name="CEOImage"
+                        name="companyCEOImage"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company CEO Country
+                         CEO Country
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company CEO Country"
-                        name="CEOCountry"
+                        placeholder=" CEO Country"
+                        name="companyCEOCountry"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company CEO Instagram
+                         CEO Instagram
                       </label>
                       <input
                         class="commonCheckbox"
                         type="checkbox"
-                        name="CEOInsta"
+                        name="companyCeoInstagram"
                         onChange={handleChange}
                       />
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Company CEO Instagram Link
+                         CEO Instagram Link
                       </label>
                       <input
                         class="formInput"
                         type="text"
-                        placeholder="Company CEO Instagram Link"
-                        name="CEOInstaLink"
+                        placeholder=" CEO Instagram Link"
+                        name="companyCEOInstagramLink"
                         onChange={handleChange}
                       />
                     </div>
