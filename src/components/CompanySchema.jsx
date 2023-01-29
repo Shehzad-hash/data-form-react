@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 export default function CompanySchema() {
   const [details, setDetails] = useState({
-    // companyName: "",
-    // companyLogo: "",
-    // companyWebsite: "",
-    // companyAffliateLink: "",
-    // companyBrokerName: "",
+    companyName: "",
+    companyLogo: "",
+    companyWebsite: "",
+    companyAffliateLink: "",
+    companyBrokerName: "",
     companyComissionsFXPerLot: "",
     companyMT4: "",
     companyMT5: "",
@@ -45,7 +45,7 @@ export default function CompanySchema() {
     companyCEOCountry: "",
     companyCeoInstagram: "",
     companyCEOInstagramLink: "",
-    companyLanguages: "",
+    companyLanguages:""
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -71,7 +71,7 @@ export default function CompanySchema() {
                   <div class="row">
                     <div class="col-lg-6">
                       <h2 class="formSubheading">General Info</h2>
-                      {/* <label class="formLabel" for="">
+                      <label class="formLabel" for="">
                         Company Name
                       </label>
                       <input
@@ -80,8 +80,8 @@ export default function CompanySchema() {
                         placeholder="Company Name"
                         name="companyName"
                         onChange={handleChange}
-                      /> */}
-                      {/* <label class="formLabel" for="">
+                      />
+                      <label class="formLabel" for="">
                         Logo
                       </label>
                       <input
@@ -89,9 +89,9 @@ export default function CompanySchema() {
                         type="file"
                         name="companyLogo"
                         onChange={handleChange}
-                      /> */}
-                      {/* <label class="formLabel" for="">
-                        Website
+                      />
+                      <label class="formLabel" for="">
+                         Website
                       </label>
                       <input
                         class="formInput"
@@ -99,9 +99,9 @@ export default function CompanySchema() {
                         placeholder=" Website"
                         name="companyWebsite"
                         onChange={handleChange}
-                      /> */}
+                      />
                       <label class="formLabel" for="">
-                        Affliate Link
+                         Affliate Link
                       </label>
                       <input
                         class="formInput"
@@ -113,8 +113,8 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-6 mt-5 mt-lg-0">
                       <h2 class="formSubheading">Platform</h2>
-                      {/* <label class="formLabel" for="">
-                        Broker Name
+                      <label class="formLabel" for="">
+                         Broker Name
                       </label>
                       <input
                         class="formInput"
@@ -122,9 +122,9 @@ export default function CompanySchema() {
                         placeholder=" Broker Name"
                         name="companyBrokerName"
                         onChange={handleChange}
-                      /> */}
+                      />
                       <label class="formLabel" for="">
-                        Comissions FX perlot
+                         Comissions FX perlot
                       </label>
                       <input
                         class="formInput"
@@ -136,7 +136,7 @@ export default function CompanySchema() {
                       <div class="row mt-2">
                         <div class="col-6">
                           <label class="formLabel" for="">
-                            MT4
+                             MT4
                           </label>
                           <input
                             class="commonCheckbox"
@@ -144,11 +144,12 @@ export default function CompanySchema() {
                             checked=""
                             name="companyMT4"
                             onChange={handleChange}
+                            
                           />
                         </div>
                         <div class="col-6">
                           <label class="formLabel" for="">
-                            MT5
+                             MT5
                           </label>
                           <input
                             class="commonCheckbox"
@@ -161,7 +162,7 @@ export default function CompanySchema() {
                       <div class="row mt-2">
                         <div class="col-6">
                           <label class="formLabel" for="">
-                            CTrader
+                             CTrader
                           </label>
                           <input
                             class="commonCheckbox"
@@ -173,7 +174,7 @@ export default function CompanySchema() {
                         </div>
                         <div class="col-6">
                           <label class="formLabel" for="">
-                            Trading View
+                             Trading View
                           </label>
                           <input
                             class="commonCheckbox"
@@ -183,7 +184,7 @@ export default function CompanySchema() {
                           />
                         </div>
                         <label class="formLabel" for="">
-                          Other Platform
+                           Other Platform
                         </label>
                         <input
                           class="formInput"
@@ -198,9 +199,11 @@ export default function CompanySchema() {
                   <h2 class="formSubheading mt-3">Social Media</h2>
                   <div class="row">
                     <div class="col-lg-3">
-                      <label class="formLabel" for=""></label>
+                      <label class="formLabel" for="">
+                        
+                      </label>
                       <a class="formLinkBtn" href="#">
-                        Instagram
+                       Instagram
                       </a>
                       <input
                         class="commonCheckbox"
@@ -211,7 +214,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Instagram Link
+                         Instagram Link
                       </label>
                       <input
                         class="formInput"
@@ -222,9 +225,10 @@ export default function CompanySchema() {
                       />
                     </div>
                     <div class="col-lg-3">
-                      <label class="formLabel" for=""></label>
+                      <label class="formLabel" for="">
+                      </label>
                       <a class="formLinkBtn" href="#">
-                        Facebook
+                       Facebook
                       </a>
                       <input
                         class="commonCheckbox"
@@ -235,7 +239,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Facebook Link
+                         Facebook Link
                       </label>
                       <input
                         class="formInput"
@@ -247,7 +251,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Twitter
+                         Twitter
                       </label>
                       <input
                         class="commonCheckbox"
@@ -258,7 +262,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Twitter Link
+                         Twitter Link
                       </label>
                       <input
                         class="formInput"
@@ -270,7 +274,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Youtube
+                         Youtube
                       </label>
                       <input
                         class="commonCheckbox"
@@ -281,7 +285,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Youtube Link
+                         Youtube Link
                       </label>
                       <input
                         class="formInput"
@@ -293,7 +297,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Tiktok
+                         Tiktok
                       </label>
                       <input
                         class="commonCheckbox"
@@ -304,7 +308,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Tiktok Link
+                         Tiktok Link
                       </label>
                       <input
                         class="formInput"
@@ -316,7 +320,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Discord Server
+                         Discord Server
                       </label>
                       <input
                         class="commonCheckbox"
@@ -327,7 +331,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Discord Server Link
+                         Discord Server Link
                       </label>
                       <input
                         class="formInput"
@@ -339,7 +343,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Telegram Channel
+                         Telegram Channel
                       </label>
                       <input
                         class="commonCheckbox"
@@ -351,7 +355,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-3">
                       <label class="formLabel" for="">
-                        Telegram Channel Link
+                         Telegram Channel Link
                       </label>
                       <input
                         class="formInput"
@@ -366,7 +370,7 @@ export default function CompanySchema() {
                   <div class="row">
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Own Mobile App
+                         Own Mobile App
                       </label>
                       <input
                         class="commonCheckbox"
@@ -377,7 +381,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Mobile App Image
+                         Mobile App Image
                       </label>
                       <input
                         class="formFile"
@@ -388,7 +392,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Acc Inother currencies
+                         Acc In Other Currencies
                       </label>
                       <input
                         class="commonCheckbox"
@@ -399,7 +403,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Other Currencies Symbol
+                         Other Currencies Symbol
                       </label>
                       <input
                         class="formInput"
@@ -411,7 +415,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Website Screenshot
+                         Website Screenshot
                       </label>
                       <input
                         class="formFile"
@@ -422,7 +426,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Website in Other languages
+                         Website in Other languages
                       </label>
                       <input
                         class="commonCheckbox"
@@ -433,7 +437,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Languages
+                         Languages
                       </label>
                       <input
                         class="formInput"
@@ -445,7 +449,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Dashboard Image
+                         Dashboard Image
                       </label>
                       <input
                         class="formFile"
@@ -459,7 +463,7 @@ export default function CompanySchema() {
                   <div class="row">
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Customer Support Live Chat
+                         Customer Support Live Chat
                       </label>
                       <input
                         class="commonCheckbox"
@@ -470,7 +474,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Customer Support Days
+                         Customer Support Days
                       </label>
                       <input
                         class="formInput"
@@ -482,7 +486,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Customer Support Hours
+                         Customer Support Hours
                       </label>
                       <input
                         class="formInput"
@@ -494,7 +498,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Avg Customer Support Response Time
+                         Avg Customer Support Response Time
                       </label>
                       <input
                         class="formInput"
@@ -506,7 +510,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Trust Pilot Stars
+                         Trust Pilot Stars
                       </label>
                       <input
                         class="formInput"
@@ -518,7 +522,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        Trust Pilot Link
+                         Trust Pilot Link
                       </label>
                       <input
                         class="formInput"
@@ -533,7 +537,7 @@ export default function CompanySchema() {
                   <div class="row">
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        CEO Name
+                         CEO Name
                       </label>
                       <input
                         class="formInput"
@@ -545,7 +549,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        CEO Image
+                         CEO Image
                       </label>
                       <input
                         class="formFile"
@@ -556,7 +560,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        CEO Country
+                         CEO Country
                       </label>
                       <input
                         class="formInput"
@@ -568,7 +572,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        CEO Instagram
+                         CEO Instagram
                       </label>
                       <input
                         class="commonCheckbox"
@@ -579,7 +583,7 @@ export default function CompanySchema() {
                     </div>
                     <div class="col-lg-4">
                       <label class="formLabel" for="">
-                        CEO Instagram Link
+                         CEO Instagram Link
                       </label>
                       <input
                         class="formInput"
